@@ -1,0 +1,72 @@
+.login-form {
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    margin-top: 100px;
+    width: fit-content;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signup-form {
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    margin-top: 100px;
+    width: fit-content;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.form-banner {
+    max-width: 400px;
+    gap: 8px;
+    margin: 10px;
+}
+
+.form-banner img {
+    max-width: 400px;
+    height: 100px;
+    width: 100%;
+}
+
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+}
+
+.form-input {
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+.form-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-submit-btn {
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #FEF9F6;
+    color: #2874F0;
+    padding: 5px 10px;
+    border: solid #2874F0;
+    border-width: 2px;
+}
+
+.form-submit-btn:hover {
+    background-color: #2874F0;
+    color: white;
+}
+
+.form-anchor {
+    text-decoration: none;
+    color: #2874F0;
+}

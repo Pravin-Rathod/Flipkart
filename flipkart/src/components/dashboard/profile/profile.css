@@ -1,0 +1,44 @@
+.user-data-tag-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-data-tag-container p {
+    margin: 20px 20px;
+    color: grey;
+}
+
+.user-data-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-data-container p {
+    margin: 20px 20px;
+}
+
+
+.user-data-container input {
+    margin: 20px 20px;
+}
+
+
+.user-data-container textarea {
+    margin: 20px 20px;
+}
+
+.user-data-edit-btn {
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    background-color: #2874F0;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 20px;
+}
+
+.user-data-edit-btn:hover {
+    background-color: #2874F0;
+    color: white;
+}

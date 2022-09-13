@@ -1,0 +1,12 @@
+.dashboardpage-container{
+    display: flex;
+}
+
+.dashboard-page {
+    margin-left: 30px;
+    margin-top: 100px;
+    background-color: #fff;
+    width: 100%;
+    margin-right: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
