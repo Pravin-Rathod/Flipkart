@@ -9,9 +9,10 @@ router.post("/cartFetch", authenticateUser, async(req, res) => {
     try{
         const userId = req.userId
         const isCartExist = await Cart.findOne({userId:userId})
-
-        if(isCartExist)
-            res.send(isCartExist.products)
+        if(isCartExist){
+            res.json({cartId:isCartExist._id,cartData:isCartExist.products})
+            // res.send(isCartExist.products)
+        }
         else
             res.status(404).json({status:404,message:"User Cart Is Empty"})
             

@@ -6,27 +6,27 @@ import icon from "../../../resources/images/flipkart.png"
 function Navbar() {
     const[cartItemCount,setCartItemCount] = useState(0)
     
-    useEffect(()=>{
-        const fetchData = async () => {
-            try {
-                const response = await fetch("/cartItemCount", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                    })
-                })
+    // useEffect(()=>{
+    //     const fetchData = async () => {
+    //         try {
+    //             const response = await fetch("/cartItemCount", {
+    //                 method: "POST",
+    //                 headers: {
+    //                     "Content-Type": "application/json"
+    //                 },
+    //                 body: JSON.stringify({
+    //                 })
+    //             })
     
-                const res = await response.json()   
-                setCartItemCount(res.count)
-            }
-            catch (err) {
-                console.log(err)
-            }
-        }
-        fetchData().catch(console.error())
-    },[cartItemCount])
+    //             const res = await response.json()   
+    //             setCartItemCount(res.count)
+    //         }
+    //         catch (err) {
+    //             console.log(err)
+    //         }
+    //     }
+    //     fetchData().catch(console.error())
+    // },[cartItemCount])
 
     return (
         <div className="nav">

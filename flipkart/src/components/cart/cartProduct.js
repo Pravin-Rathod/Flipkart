@@ -16,18 +16,18 @@ function CartProduct(product) {
         //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
     });
 
-    const [productData, setProductData] = React.useState({
-        productType: "",
-        productId: "",
-        productImage: "",
-        productName: "",
-        productRating: "",
-        productDesc: "",
-        productPrice: 0,
-        productDiscount: 0,
-        productDPrice: 0,
-        sellerProductStock: "",
-    })
+        const [productData, setProductData] = React.useState({
+            productType: "",
+            productId: "",
+            productImage: "",
+            productName: "",
+            productRating: "",
+            productDesc: "",
+            productPrice: 0,
+            productDiscount: 0,
+            productDPrice: 0,
+            sellerProductStock: "",
+        })
 
     useEffect(() => {
         const fetchData = async () => {
@@ -138,7 +138,7 @@ function CartProduct(product) {
                             <button className="cart-edit-check-btn" onClick={toggleEditQuantity}><i className="bi bi-check2"></i></button>
                         </div>
                 }
-                <NavLink to={`/deleteCartProduct/${productData.productId}`} className="cart-edit-trash-btn"><i className="bi bi-trash"></i></NavLink>
+                <NavLink to={`/deleteCartProduct/${productData.productId}`} className="cart-edit-trash-btn"><i className="bi bi-trash" style={{padding:"0px",margin:"0px"}}></i></NavLink>
             </div>
 
             <div className="cart-product-details">

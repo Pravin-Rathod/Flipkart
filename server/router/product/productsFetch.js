@@ -31,6 +31,7 @@ router.post("/productsFetchType",async (req, res) => {
 })
 
 
+
 router.post("/productFetch",async (req, res) => {
     const {productId} = req.body
     try {

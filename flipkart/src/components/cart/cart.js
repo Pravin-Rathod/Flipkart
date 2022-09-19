@@ -8,6 +8,7 @@ import "./cart.css"
 function Cart() {
 
     const [cartData, setCartData] = React.useState([])
+    const [cartId,setCartId] = React.useState(0)
     var data=0
     const navigate = useNavigate();
 
@@ -28,7 +29,8 @@ function Cart() {
                     alert(res.message)
                     navigate("/")
                 }
-                setCartData(res)
+                setCartId(res.cartId)
+                setCartData(res.cartData)
                 // data=cartData
             }
             catch (err) {
@@ -57,7 +59,7 @@ function Cart() {
                 ))
             }
             </div>
-            <CartBill cartData={cartData}/>
+            <CartBill cartData={cartData} cartId={cartId}/>
         </div>
     )
 }

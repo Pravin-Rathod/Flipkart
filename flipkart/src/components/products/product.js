@@ -133,7 +133,6 @@ function Product() {
             })
 
             const res = await addProduct.json()
-            console.log(res)
             if (res.status == 201)
                 navigate("/cart")
             else
